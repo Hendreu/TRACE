@@ -1,5 +1,6 @@
 import sqlite3
 import time
+import os
 
 def criaTabela():
     conn = sqlite3.connect("fluxoDeCaixa.db")
@@ -162,3 +163,7 @@ def insercao(inserir, id):
 
     cursor.execute("UPDATE dinheiro SET quantia= ? WHERE id_dinheiro=?", (quantiaFinal, id))
     conn.commit()
+
+
+def limparBanco():
+    os.remove("fluxoDeCaixa.db")
