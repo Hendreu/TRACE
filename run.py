@@ -44,7 +44,8 @@ def menu():
     opcao = int(input("""Selecione sua opção!
      1 Para calcular o troco
      2 Para inserir dinheiro no bando de dados
-     3 Para criar tabela\n"""))
+     3 Para criar tabela
+     4 Para limpar banco de dados\n"""))
     match opcao:
         case 1:
             calculaTroco()
@@ -54,6 +55,9 @@ def menu():
             return menu()
         case 3:
             criaTabela()
+            return menu()
+        case 4:
+            limparBanco()
             return menu()
         case _:
             print("Opção Invalida! tente novamente.")
