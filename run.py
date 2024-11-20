@@ -27,7 +27,8 @@ def calculaTroco():
             if quantia >= quantiaDeNotas:
                 troco -= quantiaDeNotas * valor
                 quantia -= quantiaDeNotas
-                print(f"{quantiaDeNotas} notas de {valor}")
+                if quantiaDeNotas > 0:
+                    print(f"O troco nescessario é de: {quantiaDeNotas} Unidades de {valor} R$")
             else:
                 troco -= quantia * valor
                 quantia = 0

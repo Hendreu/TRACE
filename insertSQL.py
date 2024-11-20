@@ -36,18 +36,18 @@ def inserirCaixa(volta):
     criaTabela()
 
     select = int(input("""Digite a opção desejada:
-1	NotaDe200
-2	NotaDe100
-3	NotaDe50
-4	NotaDe20
-5	NotaDe10
-6	NotaDe5
-7	NotaDe2
-8	MoedaDe1
-9	MoedaDe0.50
-10	MoedaDe0.25
-11	MoedaDe0.10
-12	MoedaDe0.05	
+1	Nota De 200 Reais
+2	Nota De 100 Reais
+3	Nota De 50 Reais
+4	Nota De 20 Reais
+5	Nota De 10 Reais
+6	Nota De 5 Reais
+7	Nota De 2 Reais
+8	Moeda De 1 Real
+9	Moeda De 0.50 Centavos
+10	Moeda De 0.25 Centavos
+11	Moeda De 0.10 Centavos
+12	Moeda De 0.05 Centavos
 Qualquer outro valor Para continuar\n"""))
 
     match select:
